@@ -64,6 +64,17 @@ namespace BizWorks
             }
         }
 
+        public static void DeactivateUser(string storedUsername)
+        {
+            foreach (var element in EmployeeList)
+            {
+                if (element.Username == storedUsername)
+                {
+                    element.Active = 0;
+                }
+            }
+        }
+
         public static bool checkCredentials(string passedUser, string passedPassword)
         {
             bool valid = false;
@@ -86,7 +97,7 @@ namespace BizWorks
 
         public static List<UserEmployee> ReturnAList()
         {
-            List<UserEmployee> theList = new List<UserEmployee>();
+            List < UserEmployee > theList = new List<UserEmployee>();
             theList = EmployeeList;
 
             return theList;

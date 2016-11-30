@@ -15,17 +15,18 @@ using System.Windows.Shapes;
 namespace BizWorks
 {
     /// <summary>
-    /// Interaction logic for SelectUserToView.xaml
+    /// Interaction logic for SelectUserToView1.xaml
     /// </summary>
-    public partial class SelectUserToView : Window
+    public partial class SelectUserToView1 : Window
     {
-        private string sessionUserSelectUserToView;
+        private string sessionUserSelectUserToView1;
         private string passedUsername;
 
-        public SelectUserToView(string sessionUserMainMenu)
+        public SelectUserToView1(string sessionUserMainMenu)
         {
             passedUsername = sessionUserMainMenu;
-            sessionUserSelectUserToView = sessionUserMainMenu;
+            sessionUserSelectUserToView1 = sessionUserMainMenu;
+
             InitializeComponent();
 
             List<UserEmployee> ListOfEmployees = new List<UserEmployee>();
@@ -33,7 +34,6 @@ namespace BizWorks
 
             var tempList =
                 from employee in ListOfEmployees
-                where employee.Active == 1
                 select new
                 {
                     Name = employee.FirstName + " " + employee.LastName,
@@ -52,7 +52,7 @@ namespace BizWorks
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            EmployeeShow main = new EmployeeShow(sessionUserSelectUserToView, passedUsername);
+            UserChangeToInactive main = new UserChangeToInactive(sessionUserSelectUserToView1, passedUsername);
             App.Current.MainWindow = main;
             this.Close();
             main.Show();

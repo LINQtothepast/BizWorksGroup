@@ -30,6 +30,13 @@ namespace BizWorks
                 "exampleCity2", "exampleState2", 23456, value, "admin", value, "admin", "no notes", 1);
             UserEmployeeEmergencyCollection.addUserEmergencyContact("admin", "Tara", "Blankinship",
                 "574-567-8901", "wife", value, "admin", value, "admin", "no notes", 1);
+
+
+            UserEmployeeCollection.addUser(1, "Hunter", "A", "Johnson", 1, 1,
+                "user", "12345", value, 'M', "574-123-1234", "574-234-2345",
+                "N/A", "574-345-3456", "N/A", "sun@gmail.com", value,
+                value, value, "admin", value, "admin",
+                "no notes", 1);
             wnd.Show();
         }
 

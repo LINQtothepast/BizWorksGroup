@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Window1" Height="550" Width="700">
     <Grid>
-        <TextBox x:Name="Username_Textbox" GotFocus="TextBox_GotFocus" HorizontalAlignment="Left" Height="23" Margin="290,119,0,0" TextWrapping="Wrap" Text="Enter Username" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="Username_Textbox" GotFocus="TextBox_GotFocus" HorizontalAlignment="Left" Height="23" Margin="290,119,0,0" TextWrapping="Wrap" Text="admin" VerticalAlignment="Top" Width="120" />
         <Label x:Name="label" Content="Employee Login" HorizontalAlignment="Left" Height="29" Margin="290,77,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Password_Textbox" GotFocus="TextBox_GotFocus" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Enter Password" VerticalAlignment="Top" Width="120" Margin="290,165,0,0" />
+        <TextBox x:Name="Password_Textbox" GotFocus="TextBox_GotFocus" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="120" Margin="290,165,0,0" />
         <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="290,224,0,0" VerticalAlignment="Top" Width="120" Click="button_Click"/>
 
     </Grid>

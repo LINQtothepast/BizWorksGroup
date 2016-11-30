@@ -42,5 +42,13 @@ namespace BizWorks
             this.Close();
             main.Show();
         }
+
+        private void EmployeeChangeStatusClick(object sender, RoutedEventArgs e)
+        {
+            SelectUserToView1 main = new SelectUserToView1(sessionUserMainMenu);
+            App.Current.MainWindow = main;
+            this.Close();
+            main.Show();
+        }
     }
 }

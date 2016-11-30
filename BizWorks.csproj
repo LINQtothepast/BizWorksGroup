@@ -58,6 +58,9 @@
     <Compile Include="Employee Add GUI\EmployeeAdd3.xaml.cs">
       <DependentUpon>EmployeeAdd3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Employee Delete GUI\UserChangeToInactive.xaml.cs">
+      <DependentUpon>UserChangeToInactive.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Employee Modify GUI\EmployeeAddressModify.xaml.cs">
       <DependentUpon>EmployeeAddressModify.xaml</DependentUpon>
     </Compile>
@@ -80,6 +83,9 @@
     </Compile>
     <Compile Include="Employee Add GUI\EmployeeAdd2.xaml.cs">
       <DependentUpon>EmployeeAdd2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Employee View GUI\SelectUserToView1.xaml.cs">
+      <DependentUpon>SelectUserToView1.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
@@ -109,6 +115,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Employee Delete GUI\UserChangeToInactive.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Employee Modify GUI\EmployeeAddressModify.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -122,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Employee View GUI\EmployeeShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Employee View GUI\SelectUserToView1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -165,6 +179,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
