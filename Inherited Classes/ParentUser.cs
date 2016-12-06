@@ -19,8 +19,8 @@ namespace BizWorks
         public UserInfo(int profileTypeID, string user, string pass,
             string workNum, string faxNum, string email,
             DateTime createdOn, string createdBy, DateTime lastUpdatedOn,
-            string lastUpdatedBy, string notes, int guiID)
-            : base (createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes, guiID)
+            string lastUpdatedBy, string notes)
+            : base (createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes)
         {
             UserProfileTypeID = profileTypeID;
             Username = user;

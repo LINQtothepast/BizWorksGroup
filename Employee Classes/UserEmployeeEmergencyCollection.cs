@@ -18,7 +18,7 @@ namespace BizWorks
         {
             EmployeeEmergencyContactList.Add(new EmergencyContact(Username, eFirst,
                 eLast, ePhoneNumber, eRelation, createdOn,
-                createdBy, lastUpdatedOn, lastUpdatedBy, notes, guiID));
+                createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
 
         public static void ModifyUserEmergencyContact1(string passedUsername, string eFirst,
@@ -39,7 +39,6 @@ namespace BizWorks
                 element.UserLastUpdatedOn = lastUpdatedOn;
                 element.UserLastUpdatedBy = lastUpdatedBy;
                 element.UserNotes = notes;
-                element.UserGuiID = guiID;
             }
         }
 
@@ -60,7 +59,7 @@ namespace BizWorks
             {
                 EmployeeEmergencyContactList.Add(new EmergencyContact(passedUsername, eFirst,
                 eLast, ePhoneNumber, eRelation, createdOn,
-                createdBy, lastUpdatedOn, lastUpdatedBy, notes, guiID));
+                createdBy, lastUpdatedOn, lastUpdatedBy, notes));
             }
             else if (count == 2)
             {
@@ -76,7 +75,6 @@ namespace BizWorks
                     element.UserLastUpdatedOn = lastUpdatedOn;
                     element.UserLastUpdatedBy = lastUpdatedBy;
                     element.UserNotes = notes;
-                    element.UserGuiID = guiID;
                 }
             }
         }

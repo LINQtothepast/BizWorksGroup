@@ -18,8 +18,8 @@ namespace BizWorks
         public EmergencyContact(string user, string first,
             string last, string phone, string relation,
             DateTime createdOn, string createdBy, DateTime lastUpdatedOn,
-            string lastUpdatedBy, string notes, int guiID)
-            : base (createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes, guiID)
+            string lastUpdatedBy, string notes)
+            : base (createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes)
         {
             Username = user;
             FirstName = first;

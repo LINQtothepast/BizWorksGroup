@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Asset Classes\Asset.cs" />
+    <Compile Include="Asset Classes\AssetCollection.cs" />
     <Compile Include="Employee Add GUI\EmployeeAdd3.xaml.cs">
       <DependentUpon>EmployeeAdd3.xaml</DependentUpon>
     </Compile>
@@ -103,6 +105,8 @@
     </Compile>
     <Compile Include="Employee Classes\UserEmployee.cs" />
     <Compile Include="Employee Classes\UserEmployeeEmergencyCollection.cs" />
+    <Compile Include="Transaction Classes\Transaction.cs" />
+    <Compile Include="Transaction Classes\TransactionCollection.cs" />
     <Page Include="Employee Add GUI\EmployeeAdd1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

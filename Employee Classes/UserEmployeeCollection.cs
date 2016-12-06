@@ -21,7 +21,7 @@ namespace BizWorks
             EmployeeList.Add(new UserEmployee(active, first, middle, last, profileTypeID,
                 postionID, user, pass, birth, gender, homeNum, mobile1,
                 mobile2, workNum, faxNum, email, start, end, createdOn,
-                createdBy, lastUpdatedOn, lastUpdatedBy, notes, guiID));
+                createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
 
         public static void ModifyUser(int active, string first,
@@ -59,7 +59,6 @@ namespace BizWorks
                     element.UserLastUpdatedOn = lastUpdatedOn;
                     element.UserLastUpdatedBy = lastUpdatedBy;
                     element.UserNotes = notes;
-                    element.UserGuiID = guiID;
                 }
             }
         }

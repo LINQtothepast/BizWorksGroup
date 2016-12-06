@@ -16,15 +16,13 @@ namespace BizWorks
         protected int userGuiID;
 
         public CreateUpdate(DateTime createdOn, string createdBy,
-            DateTime lastUpdatedOn, string lastUpdatedBy, string notes,
-            int guiID)
+            DateTime lastUpdatedOn, string lastUpdatedBy, string notes)
         {
             UserCreatedOn = createdOn;
             UserCreatedBy = createdBy;
             UserLastUpdatedOn = lastUpdatedOn;
             UserLastUpdatedBy = lastUpdatedBy;
             UserNotes = notes;
-            UserGuiID = guiID;
         }
 
 
@@ -52,11 +50,6 @@ namespace BizWorks
         {
             get { return userNotes;}
             set { userNotes = value; }
-        }
-        public int UserGuiID
-        {
-            get { return userGuiID; }
-            set { userGuiID = value; }
         }
     }
 }

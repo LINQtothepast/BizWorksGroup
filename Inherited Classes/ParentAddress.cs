@@ -18,9 +18,9 @@ namespace BizWorks
         public Address(string profileName, string addressStreet, string addressCity,
             string addressState, int addressZipCode, DateTime createdOn,
             string createdBy, DateTime lastUpdatedOn, string lastUpdatedBy,
-            string notes, int guiID) 
+            string notes) 
             : base(createdOn, createdBy, lastUpdatedOn,
-                  lastUpdatedBy, notes, guiID)
+                  lastUpdatedBy, notes)
         {
             UserProfileName = profileName;
             UserAddressStreet = addressStreet;

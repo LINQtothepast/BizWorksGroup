@@ -18,7 +18,7 @@ namespace BizWorks
         {
             EmployeeAddressList.Add(new Address(profileName, addressStreet,
                 addressCity, addressState, addressZipCode, createdOn,
-                createdBy, lastUpdatedOn, lastUpdatedBy, notes, guiID));
+                createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
 
         public static void ModifyUserAddress1(string profileName, string addressStreet,
@@ -39,7 +39,6 @@ namespace BizWorks
                 element.UserLastUpdatedOn = lastUpdatedOn;
                 element.UserLastUpdatedBy = lastUpdatedBy;
                 element.UserNotes = notes;
-                element.UserGuiID = guiID;
             } 
         }
 
@@ -60,7 +59,7 @@ namespace BizWorks
             {
                 EmployeeAddressList.Add(new Address(profileName, addressStreet,
                 addressCity, addressState, addressZipCode, createdOn,
-                createdBy, lastUpdatedOn, lastUpdatedBy, notes, guiID));
+                createdBy, lastUpdatedOn, lastUpdatedBy, notes));
             }
             else if (count == 2)
             {
@@ -76,7 +75,6 @@ namespace BizWorks
                     element.UserLastUpdatedOn = lastUpdatedOn;
                     element.UserLastUpdatedBy = lastUpdatedBy;
                     element.UserNotes = notes;
-                    element.UserGuiID = guiID;
                 }
             }
         }

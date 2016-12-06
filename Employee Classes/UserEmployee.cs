@@ -28,10 +28,10 @@ namespace BizWorks
             string homeNum, string mobile1, string mobile2, string workNum,
             string faxNum, string email, DateTime start, DateTime end,
             DateTime createdOn, string createdBy, DateTime lastUpdatedOn,
-            string lastUpdatedBy, string notes, int guiID)
+            string lastUpdatedBy, string notes)
             : base (postionID, user, pass, workNum, faxNum, email,
                     createdOn, createdBy, lastUpdatedOn, lastUpdatedBy,
-                    notes, guiID)
+                    notes)
         {
             Active = active;
             FirstName = first;
