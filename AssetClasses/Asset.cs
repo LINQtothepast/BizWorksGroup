@@ -21,43 +21,43 @@ namespace BizWorks
 
         //constructor
         public Asset(string assetName, float assetValue, float assetQuantity, string category){
-            assetName = assetName;
-            assetValue = assetValue;
-            assetQuantity = assetQuantity;
-            category = category;
-            assetID = assetList.size();
-            totalValue = assetValue * assetQuantity;
+            AssetName = assetName;
+            AssetValue = assetValue;
+            AssetQuantity = assetQuantity;
+            Category = category;
+            AssetID = assetList.size();
+            TotalValue = assetValue * assetQuantity;
         }
         
         public static update(assetID, isCredit, transactionAmount){
             // update asset amount
         }
         
-        public int assetID
+        public int AssetID
         {
             get { return assetID; }
             set { assetID = value; }
         }
         
-        public string assetName
+        public string AssetName
         {
             get { return assetName; }
             set {assetName = value; }
         }
   
-        public string category
+        public string Category
         {
             get { return category; }
             set { category = value; }
         }
      
-        public float assetValue
+        public float AssetValue
         {
             get { return assetValue; }
             set { assetValue = value; }
         }
         
-        public float assetQuantity
+        public float AssetQuantity
         {
             get {return assetQuantity; }
             set { assetQuantity = value; }
