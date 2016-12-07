@@ -25,7 +25,7 @@ namespace BizWorks
             AssetValue = assetValue;
             AssetQuantity = assetQuantity;
             Category = category;
-            AssetID = AssetCollection.GetAssetID();
+            AssetID = AssetCollection.GetAssetID(assetName);
             TotalValue = assetValue * assetQuantity;
         }
 
