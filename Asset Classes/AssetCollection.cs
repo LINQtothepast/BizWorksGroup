@@ -24,7 +24,7 @@ namespace BizWorks
           /*  for i in AssetList:
                 if i.assetName is in assetList:
                     return assetList[assetName].index
-                else return assetList.size and add new() asset to assetlist
+                else return assetList.Count and add new() asset to assetlist
                 */
         }
     }
