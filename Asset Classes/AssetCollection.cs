@@ -21,7 +21,11 @@ namespace BizWorks
         public static int GetAssetID()
         {
             //fill in what u need here
-            return 1;
+          /*  for i in AssetList:
+                if i.assetName is in assetList:
+                    return assetList[assetName].index
+                else return assetList.size and add new() asset to assetlist
+                */
         }
     }
 }
