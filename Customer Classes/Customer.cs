@@ -23,7 +23,5 @@ namespace BizWorks
         }
 
         //Properties
-        
-        
     }
 }
