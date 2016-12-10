@@ -20,7 +20,8 @@ namespace BizWorks
 
         public static int GetAssetID()
         {
-            return AssetList.Count();
+            x = AssetList.Count();
+            return x;
         }
     }
 }
