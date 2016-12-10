@@ -20,12 +20,7 @@ namespace BizWorks
 
         public static int GetAssetID()
         {
-            //fill in what u need here
-          /*  for i in AssetList:
-                if i.assetName is in assetList:
-                    return assetList[assetName].index
-                else return assetList.Count and add new() asset to assetlist
-                */
+            return AssetList.Count();
         }
     }
 }
