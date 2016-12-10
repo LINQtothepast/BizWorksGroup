@@ -17,6 +17,18 @@ namespace BizWorks
             TransactionList.Add(new Transaction(Credit, custID, transactAmount, cgory, transactDate,
                 AssID, createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
+        
+         
+        public static String listTransactions(DateTime transDate){
+            for (int i = 0; i <= TransactionList.Count(); i++)
+            {
+                if (TransactionList[i].transactionDate == transDate){
+                    Console.WriteLine("Amount : ", TransactionList[i].transactionAmount);
+                    Console.WriteLine("Customer : ", getCustomerName(TransactionList[i].CustomerID));
+                    Console.WriteLine("Date : ", TransactionList[i].transactionDate);
+                   }
+            }
+        }
 
         private static int GetTransactionID()
         {
