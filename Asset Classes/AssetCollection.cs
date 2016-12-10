@@ -39,11 +39,8 @@ namespace BizWorks
                     Console.WriteLine("Quantity : ", AssetList[i].assetQuantity);
                     Console.WriteLine("Total Value : ", GetTotalValue(assetList[i]);
                     }
-                else{
-                    Console.WriteLine("Asset name could not be found".);
-                }
             }
-        }
+         }
                                       
     }
 }
