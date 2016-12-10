@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +25,7 @@ namespace BizWorks
             //would give u x as 3 if array [0], [1], and [2] are filled
             //which would be where TransactionList.Add will add onto but
             //you will need to run checks to make sure
-            return 1;
+            return x;
         }
     }
 }

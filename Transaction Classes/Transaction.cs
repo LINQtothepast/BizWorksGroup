@@ -29,7 +29,10 @@ namespace BizWorks
             Category = cgory;
             TransactionDate = transactDate;
             AssetID = AssID;      // assetID == 1 is for cash, everything else is a material item eg. inventory
-            //transactionID = TransactionList.size();
+			TransactionCollection.AddTransaction((IsCredit, CustomerID, TransactionAmount, Category,
+            TransactionDate, AssetID, createdOn, createdBy, DateTime lastUpdatedOn,
+            lastUpdatedBy, notes);
+            transactionID = TransactionCollection.GetTransactionID();
         }
 
         public int TransactionID
