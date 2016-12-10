@@ -20,8 +20,30 @@ namespace BizWorks
 
         public static int GetAssetID()
         {
-            x = AssetList.Count();
+            int x = AssetList.Count();
             return x;
         }
+        
+        public static float GetTotalValue(Asset ass)
+        {
+            return ass.assetValue * ass.assetQuantity;
+        }
+            
+        
+        public static String printDetails(String name){
+            for (int i = 0; i <= AssetList.Count(); i++)
+            {
+                if (AssetList[i].assetName == name){
+                    Console.WriteLine("Name : ", AssetList[i].name);
+                    Console.WriteLine("Value : ", AssetList[i].assetValue);
+                    Console.WriteLine("Quantity : ", AssetList[i].assetQuantity);
+                    Console.WriteLine("Total Value : ", GetTotalValue(assetList[i]);
+                    }
+                else{
+                    Console.WriteLine("Asset name could not be found".);
+                }
+            }
+        }
+                                      
     }
 }
