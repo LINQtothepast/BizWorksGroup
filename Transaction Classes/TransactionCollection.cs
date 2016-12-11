@@ -11,11 +11,10 @@ namespace BizWorks
         private static List<Transaction> TransactionList = new List<Transaction>();
 
         private static void AddTransaction(bool Credit, int custID, float transactAmount, string cgory,
-        DateTime transactDate, int AssID, DateTime createdOn, string createdBy, DateTime lastUpdatedOn,
-            string lastUpdatedBy, string notes)
+        DateTime transactDate, int AssID, DateTime createdOn, string createdBy, string notes)
         {
             TransactionList.Add(new Transaction(Credit, custID, transactAmount, cgory, transactDate,
-                AssID, createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes));
+                AssID, createdOn, createdBy, notes));
         }
         
          
