@@ -45,6 +45,7 @@ namespace BizWorks
             float transactionAmount;
             DateTime transactionDate;
             string category, notes;
+            
             cust = customerID.Text;
             iscredit = isCredit.Text;
             amount = TransactionAmount.Text;
