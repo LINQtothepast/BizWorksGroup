@@ -58,7 +58,7 @@ namespace BizWorks
             //adds on to the back
             //so access with TransactionCollection.last();
             TransactionCollection.AddTransaction(iscredit, cust, amount,  cgory,
-            transactDate, assID, DateTime createdOn, string createdBy, string notes);
+            transactDate, assID, DateTime createdOn, createdBy, notes);
 
             App.Current.MainWindow = main;
             this.Close();
