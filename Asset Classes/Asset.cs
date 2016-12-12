@@ -17,9 +17,8 @@ namespace BizWorks
    
         //constructor
         public Asset(string assetName, float assetValue, float assetQuantity, string category,
-            DateTime createdOn, string createdBy, DateTime lastUpdatedOn,
-            string lastUpdatedBy, string notes)
-            : base(createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes)
+            DateTime createdOn, string createdBy, string notes)
+            : base(createdOn, createdBy, notes)
         { 
             AssetName = assetName;
             AssetValue = assetValue;
