@@ -18,5 +18,6 @@
         <Button x:Name="AssetAdd" Content="Asset Add" HorizontalAlignment="Left" Margin="370,85,0,0" VerticalAlignment="Top" Width="106" Click="AddAssetClick" Height="22"/>
         <Button x:Name="AssetUpdate" Content="Asset Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="370,112,0,0" Click="EditAssetClick" />
         <Label x:Name="label2_Copy" Content="Asset" HorizontalAlignment="Left" Margin="402,54,0,0" VerticalAlignment="Top" Width="96"/>
+        <Image Height="255" Margin="115,0,192,79" Stretch="UniformToFill" Source="BizworksLogo.jpg" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
