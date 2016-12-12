@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BizWorks
 {
-    public class UserEmployeeAddressCollection
+    public class UserEmployeeAddressCollection2
     {
         private static List<Address> EmployeeAddressList = new List<Address>();
 
-        public static void addUserAddress1(string profileName, string addressStreet,
+        public static void addUserAddress2(string profileName, string addressStreet,
             string addressCity, string addressState,
             int addressZipCode, DateTime createdOn,
             string createdBy, DateTime lastUpdatedOn, string lastUpdatedBy,
@@ -21,7 +21,7 @@ namespace BizWorks
                 createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
 
-        public static void ModifyUserAddress1(string profileName, string addressStreet,
+        public static void ModifyUserAddress2(string profileName, string addressStreet,
             string addressCity, string addressState,
             int addressZipCode, DateTime createdOn,
             string createdBy, DateTime lastUpdatedOn, string lastUpdatedBy,
@@ -39,10 +39,22 @@ namespace BizWorks
                 element.UserLastUpdatedOn = lastUpdatedOn;
                 element.UserLastUpdatedBy = lastUpdatedBy;
                 element.UserNotes = notes;
-            } 
+            }
         }
 
-        public static string GetStreet1(string passedUsername)
+        public static void DeleteUserAddress2(string passedUsername)
+        {
+            foreach (var element in EmployeeAddressList)
+            {
+                if (element.UserProfileName == passedUsername)
+                {
+                    EmployeeAddressList.Remove(element);
+                }
+            }
+                
+        }
+
+        public static string GetStreet2(string passedUsername)
         {
             string x = "";
             var query =
@@ -55,7 +67,7 @@ namespace BizWorks
             }
             return x;
         }
-        public static string GetCity1(string passedUsername)
+        public static string GetCity2(string passedUsername)
         {
             string x = "";
             var query =
@@ -68,7 +80,7 @@ namespace BizWorks
             }
             return x;
         }
-        public static string GetState1(string passedUsername)
+        public static string GetState2(string passedUsername)
         {
             string x = "";
             var query =
@@ -81,20 +93,20 @@ namespace BizWorks
             }
             return x;
         }
-        public static int GetZipCode1(string passedUsername)
+        public static int GetZipCode2(string passedUsername)
         {
             int x = 0;
             var query =
                 from employee in EmployeeAddressList
                 where employee.UserProfileName == passedUsername
                 select employee.UserAddressZipCode;
-            foreach(var item in query)
+            foreach (var item in query)
             {
                 x = item;
             }
             return x;
         }
-        public static string GetNotes1(string passedUsername)
+        public static string GetNotes2(string passedUsername)
         {
             string x = "";
             var query =
@@ -127,6 +139,5 @@ namespace BizWorks
             foreach (var item in query) { x = item; }
             return x;
         }
-
     }
 }

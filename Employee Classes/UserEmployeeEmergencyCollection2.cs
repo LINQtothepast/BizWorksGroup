@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BizWorks
 {
-    public class UserEmployeeEmergencyCollection
+    public class UserEmployeeEmergencyCollection2
     {
         private static List<EmergencyContact> EmployeeEmergencyContactList = new List<EmergencyContact>();
 
-        public static void addUserEmergencyContact1(string Username, string eFirst,
+        public static void addUserEmergencyContact2(string Username, string eFirst,
             string eLast, string ePhoneNumber,
             string eRelation, DateTime createdOn,
             string createdBy, DateTime lastUpdatedOn, string lastUpdatedBy,
@@ -21,14 +21,14 @@ namespace BizWorks
                 createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
 
-        public static void ModifyUserEmergencyContact1(string passedUsername, string eFirst,
+        public static void ModifyUserEmergencyContact2(string passedUsername, string eFirst,
             string eLast, string ePhoneNumber,
             string eRelation, DateTime createdOn,
             string createdBy, DateTime lastUpdatedOn, string lastUpdatedBy,
             string notes)
         {
             foreach (var element in EmployeeEmergencyContactList
-                .Where(element => element.Username == passedUsername).Take(1))
+                .Where(element => element.Username == passedUsername))
             {
                 element.FirstName = eFirst;
                 element.LastName = eLast;
@@ -42,7 +42,17 @@ namespace BizWorks
             }
         }
 
-        public static string GetFirstName1(string username)
+        public static void RemoveEContact2(string username)
+        {
+            foreach (var element in EmployeeEmergencyContactList)
+            {
+                if (element.Username == username)
+                {
+                    EmployeeEmergencyContactList.Remove(element);
+                }
+            }
+        }
+        public static string GetFirstName2(string username)
         {
             string x = "";
             var query =
@@ -55,7 +65,7 @@ namespace BizWorks
             }
             return x;
         }
-        public static string GetLastName1(string username)
+        public static string GetLastName2(string username)
         {
             string x = "";
             var query =
@@ -68,7 +78,7 @@ namespace BizWorks
             }
             return x;
         }
-        public static string GetPhone1(string username)
+        public static string GetPhone2(string username)
         {
             string x = "";
             var query =
@@ -81,7 +91,7 @@ namespace BizWorks
             }
             return x;
         }
-        public static string GetRelation1(string username)
+        public static string GetRelation2(string username)
         {
             string x = "";
             var query =
@@ -94,7 +104,7 @@ namespace BizWorks
             }
             return x;
         }
-        public static string GetNotes1(string username)
+        public static string GetNotes2(string username)
         {
             string x = "";
             var query =

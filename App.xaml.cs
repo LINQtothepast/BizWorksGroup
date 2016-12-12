@@ -23,20 +23,21 @@ namespace BizWorks
                 "admin", "password", value, 'M', "574-123-1234", "574-234-2345",
                 "N/A", "574-345-3456", "N/A", "sun@gmail.com", value,
                 value, value, "admin", value, "admin",
-                "no notes", 1);
-            UserEmployeeAddressCollection.addUserAddress("admin", "exampleStreet1",
-                "exampleCity1", "exampleState1", 12345, value, "admin", value, "admin", "no notes", 1);
-            UserEmployeeAddressCollection.addUserAddress("admin", "exampleStreet2",
-                "exampleCity2", "exampleState2", 23456, value, "admin", value, "admin", "no notes", 1);
-            UserEmployeeEmergencyCollection.addUserEmergencyContact("admin", "Tara", "Blankinship",
-                "574-567-8901", "wife", value, "admin", value, "admin", "no notes", 1);
-
+                "no notes");
+            UserEmployeeAddressCollection.addUserAddress1("admin", "exampleStreet1",
+                "exampleCity1", "exampleState1", 12345, value, "admin", value, "admin", "no notes");
+            UserEmployeeAddressCollection2.addUserAddress2("admin", "exampleStreet2",
+                "exampleCity2", "exampleState2", 23456, value, "admin", value, "admin", "no notes");
+            UserEmployeeEmergencyCollection.addUserEmergencyContact1("admin", "Tara", "Blankinship",
+                "574-567-8901", "wife", value, "admin", value, "admin", "no notes");
+            UserEmployeeEmergencyCollection2.addUserEmergencyContact2("admin", "ASD", "adf",
+                "adsf", "adsf", value, "admin", value, "admin", "no notes");
 
             UserEmployeeCollection.addUser(1, "Hunter", "A", "Johnson", 1, 1,
                 "user", "12345", value, 'M', "574-123-1234", "574-234-2345",
                 "N/A", "574-345-3456", "N/A", "sun@gmail.com", value,
                 value, value, "admin", value, "admin",
-                "no notes", 1);
+                "no notes");
             wnd.Show();
         }
 

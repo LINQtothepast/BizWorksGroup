@@ -16,7 +16,7 @@ namespace BizWorks
             string homeNum, string mobile1, string mobile2, string workNum,
             string faxNum, string email, DateTime start, DateTime end,
             DateTime createdOn, string createdBy, DateTime lastUpdatedOn,
-            string lastUpdatedBy, string notes, int guiID)
+            string lastUpdatedBy, string notes)
         {
             EmployeeList.Add(new UserEmployee(active, first, middle, last, profileTypeID,
                 postionID, user, pass, birth, gender, homeNum, mobile1,
@@ -249,6 +249,26 @@ namespace BizWorks
                 from employee in EmployeeList
                 where employee.Username == username
                 select employee.Password;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
+        public static string GetCreatedBy(string username)
+        {
+            string x = "";
+            var query =
+                from employee in EmployeeList
+                where employee.Username == username
+                select employee.UserCreatedBy;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
+        public static DateTime GetCreatedByDate(string username)
+        {
+            DateTime x = new DateTime();
+            var query =
+                from employee in EmployeeList
+                where employee.Username == username
+                select employee.UserCreatedOn;
             foreach (var item in query) { x = item; }
             return x;
         }

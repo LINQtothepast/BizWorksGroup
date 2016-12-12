@@ -50,5 +50,19 @@ namespace BizWorks
             this.Close();
             main.Show();
         }
+        private void AddCustomerClick(object sender, RoutedEventArgs e)
+        {
+            CustomerAdd1 main = new CustomerAdd1(sessionUserMainMenu);
+            App.Current.MainWindow = main;
+            this.Close();
+            main.Show();
+        }
+        private void EditCustomerClick(object sender, RoutedEventArgs e)
+        {
+            SelectCustomerToView main = new SelectCustomerToView(sessionUserMainMenu);
+            App.Current.MainWindow = main;
+            this.Close();
+            main.Show();
+        }
     }
 }

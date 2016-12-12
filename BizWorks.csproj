@@ -57,36 +57,54 @@
     </ApplicationDefinition>
     <Compile Include="Asset Classes\Asset.cs" />
     <Compile Include="Asset Classes\AssetCollection.cs" />
-    <Compile Include="Employee Add GUI\EmployeeAdd3.xaml.cs">
+    <Compile Include="Customer Classes\Customer.cs" />
+    <Compile Include="Customer Classes\CustomerAddressCollection.cs" />
+    <Compile Include="Customer GUI\Customer Add GUI\CustomerAdd1.xaml.cs">
+      <DependentUpon>CustomerAdd1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Classes\CustomerCollection.cs" />
+    <Compile Include="Customer GUI\Customer Add GUI\CustomerAdd2.xaml.cs">
+      <DependentUpon>CustomerAdd2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer GUI\Customer Modify GUI\CustomerModifyAddress.xaml.cs">
+      <DependentUpon>CustomerModifyAddress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer GUI\Customer Modify GUI\CustomerModifyProfile.xaml.cs">
+      <DependentUpon>CustomerModifyProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customer GUI\Customer View GUI\CustomerShow.xaml.cs">
+      <DependentUpon>CustomerShow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Employee GUI\Employee Add GUI\EmployeeAdd3.xaml.cs">
       <DependentUpon>EmployeeAdd3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Employee Delete GUI\UserChangeToInactive.xaml.cs">
+    <Compile Include="Employee GUI\Employee Delete GUI\UserChangeToInactive.xaml.cs">
       <DependentUpon>UserChangeToInactive.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Employee Modify GUI\EmployeeAddressModify.xaml.cs">
+    <Compile Include="Employee GUI\Employee Modify GUI\EmployeeAddressModify.xaml.cs">
       <DependentUpon>EmployeeAddressModify.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Employee Modify GUI\EmployeeEContactModify.xaml.cs">
+    <Compile Include="Employee GUI\Employee Modify GUI\EmployeeEContactModify.xaml.cs">
       <DependentUpon>EmployeeEContactModify.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Employee Modify GUI\EmployeeModify.xaml.cs">
+    <Compile Include="Employee GUI\Employee Modify GUI\EmployeeModify.xaml.cs">
       <DependentUpon>EmployeeModify.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Employee View GUI\EmployeeShow.xaml.cs">
+    <Compile Include="Employee GUI\Employee View GUI\EmployeeShow.xaml.cs">
       <DependentUpon>EmployeeShow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Employee Classes\ParentEmergencyContact.cs" />
-    <Compile Include="Employee View GUI\SelectUserToView.xaml.cs">
+    <Compile Include="Employee GUI\Employee View GUI\SelectUserToView.xaml.cs">
       <DependentUpon>SelectUserToView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Employee Classes\UserEmployeeAddressCollection.cs" />
-    <Compile Include="Employee Add GUI\EmployeeAdd1.xaml.cs">
+    <Compile Include="Employee GUI\Employee Add GUI\EmployeeAdd1.xaml.cs">
       <DependentUpon>EmployeeAdd1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Employee Add GUI\EmployeeAdd2.xaml.cs">
+    <Compile Include="Employee GUI\Employee Add GUI\EmployeeAdd2.xaml.cs">
       <DependentUpon>EmployeeAdd2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Employee View GUI\SelectUserToView1.xaml.cs">
+    <Compile Include="Employee GUI\Employee View GUI\SelectUserToView1.xaml.cs">
       <DependentUpon>SelectUserToView1.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.xaml.cs">
@@ -105,41 +123,66 @@
     </Compile>
     <Compile Include="Employee Classes\UserEmployee.cs" />
     <Compile Include="Employee Classes\UserEmployeeEmergencyCollection.cs" />
+    <Compile Include="Customer GUI\Customer View GUI\SelectCustomerToView.xaml.cs">
+      <DependentUpon>SelectCustomerToView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Transaction Classes\Transaction.cs" />
     <Compile Include="Transaction Classes\TransactionCollection.cs" />
-    <Page Include="Employee Add GUI\EmployeeAdd1.xaml">
+    <Compile Include="Employee Classes\UserEmployeeAddressCollection2.cs" />
+    <Compile Include="Employee Classes\UserEmployeeEmergencyCollection2.cs" />
+    <Page Include="Customer GUI\Customer Add GUI\CustomerAdd1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employee Add GUI\EmployeeAdd2.xaml">
+    <Page Include="Customer GUI\Customer Add GUI\CustomerAdd2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employee Add GUI\EmployeeAdd3.xaml">
+    <Page Include="Customer GUI\Customer Modify GUI\CustomerModifyAddress.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employee Delete GUI\UserChangeToInactive.xaml">
+    <Page Include="Customer GUI\Customer Modify GUI\CustomerModifyProfile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employee Modify GUI\EmployeeAddressModify.xaml">
+    <Page Include="Customer GUI\Customer View GUI\CustomerShow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employee Modify GUI\EmployeeEContactModify.xaml">
+    <Page Include="Employee GUI\Employee Add GUI\EmployeeAdd1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employee Modify GUI\EmployeeModify.xaml">
+    <Page Include="Employee GUI\Employee Add GUI\EmployeeAdd2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employee View GUI\EmployeeShow.xaml">
+    <Page Include="Employee GUI\Employee Add GUI\EmployeeAdd3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employee View GUI\SelectUserToView1.xaml">
+    <Page Include="Employee GUI\Employee Delete GUI\UserChangeToInactive.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Employee GUI\Employee Modify GUI\EmployeeAddressModify.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Employee GUI\Employee Modify GUI\EmployeeEContactModify.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Employee GUI\Employee Modify GUI\EmployeeModify.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Employee GUI\Employee View GUI\EmployeeShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Employee GUI\Employee View GUI\SelectUserToView1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -151,7 +194,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Employee View GUI\SelectUserToView.xaml">
+    <Page Include="Employee GUI\Employee View GUI\SelectUserToView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Customer GUI\Customer View GUI\SelectCustomerToView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

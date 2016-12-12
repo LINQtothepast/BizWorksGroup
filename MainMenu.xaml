@@ -12,5 +12,8 @@
         <Button x:Name="EmployeeDelete" Content="Employee Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="29,139,0,0" Click="EmployeeChangeStatusClick"/>
         <Label x:Name="label" Content="Choose Your Service" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="162,10,0,0" Height="28" Width="120"/>
         <Label x:Name="label1" Content="Employee" HorizontalAlignment="Left" Height="29" Margin="52,51,0,0" VerticalAlignment="Top" Width="106"/>
+        <Label x:Name="label2" Content="Customer" HorizontalAlignment="Left" Margin="233,51,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="CustomerAdd" Content="Customer Add" HorizontalAlignment="Left" Margin="209,85,0,0" VerticalAlignment="Top" Width="106" Click="AddCustomerClick" Height="22"/>
+        <Button x:Name="CustomerUpdate" Content="Customer Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="209,112,0,0" Click="EditCustomerClick" />
     </Grid>
 </Window>

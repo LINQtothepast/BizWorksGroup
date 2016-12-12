@@ -1,0 +1,35 @@
+﻿<Window x:Class="BizWorks.CustomerShow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BizWorks"
+        mc:Ignorable="d"
+        Title="CustomerShow" Height="432.936" Width="618.691">
+    <Grid Margin="0,0,3,-19.8">
+        <Label x:Name="label" Content="Username : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,76,0,0" Height="28" Width="89"/>
+        <Label x:Name="label_Copy" Content="Profile Type :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,43,0,0" Height="28" Width="89"/>
+        <Label x:Name="label_Copy9" Content="Work Phone # : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,109,0,0" Height="28" Width="100"/>
+        <Label x:Name="label_Copy10" Content="Fax Phone # :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,142,0,0" Height="28" Width="89"/>
+        <Label x:Name="label_Copy12" Content="Email :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,175,0,0" Height="28" Width="89"/>
+        <Label x:Name="Email" Content=" " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="115,175,0,0" Height="28" Width="200"/>
+        <Label x:Name="FaxPhone" Content=" " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="115,142,0,0" Height="28" Width="139"/>
+        <Label x:Name="WorkPhone" Content=" " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="115,109,0,0" Height="28" Width="139"/>
+        <Label x:Name="ProfileType" Content=" " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="115,43,0,0" Height="28" Width="139"/>
+        <Label x:Name="UserName" Content=" " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="115,76,0,0" Height="28" Width="139"/>
+        <Label x:Name="label_Copy14" Content="Street : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,10,0,0" Height="28" Width="71"/>
+        <Label x:Name="label_Copy15" Content="City : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,43,0,0" Height="28" Width="71"/>
+        <Label x:Name="label_Copy16" Content="State : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,76,0,0" Height="28" Width="71"/>
+        <Label x:Name="label_Copy17" Content="Zip Code : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,109,0,0" Height="28" Width="71"/>
+        <Label x:Name="Street1" Content=" " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="353,10,0,0" Height="28" Width="205"/>
+        <Label x:Name="City1" Content=" " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="353,43,0,0" Height="28" Width="205"/>
+        <Label x:Name="State1" Content=" " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="353,76,0,0" Height="28" Width="205"/>
+        <Label x:Name="ZipCode1" Content=" " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="353,109,0,0" Height="28" Width="205"/>
+        <Button x:Name="button" Content="Error in Customer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="60,261,0,0" Height="39" Click="ErrorInCustomer_Click"/>
+        <Button x:Name="button_Copy" Content="Error in Address" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="411,261,0,0" Height="39" Click="ErrorInCustomerAddress_Click"/>
+        <Button x:Name="button_Copy2" Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="411,335,0,0" Height="39" Click="Submit_Click"/>
+        <Label x:Name="label_Copy1" Content="Company Name :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Height="28" Width="105"/>
+        <Label x:Name="ComName" Content=" " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="115,10,0,0" Height="28" Width="139"/>
+
+    </Grid>
+</Window>

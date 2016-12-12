@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace BizWorks
 {
-    public class UserEmployeeAddressCollection
+    public class CustomerAddressCollection
     {
-        private static List<Address> EmployeeAddressList = new List<Address>();
+        private static List<Address> CustomerAddressList = new List<Address>();
 
-        public static void addUserAddress1(string profileName, string addressStreet,
+        public static void addCustomerAddress(string profileName, string addressStreet,
             string addressCity, string addressState,
             int addressZipCode, DateTime createdOn,
             string createdBy, DateTime lastUpdatedOn, string lastUpdatedBy,
             string notes)
         {
-            EmployeeAddressList.Add(new Address(profileName, addressStreet,
+            CustomerAddressList.Add(new Address(profileName, addressStreet,
                 addressCity, addressState, addressZipCode, createdOn,
                 createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
 
-        public static void ModifyUserAddress1(string profileName, string addressStreet,
+        public static void ModifyCustomerAddress1(string profileName, string addressStreet,
             string addressCity, string addressState,
             int addressZipCode, DateTime createdOn,
             string createdBy, DateTime lastUpdatedOn, string lastUpdatedBy,
-            string notes)
+            string notes, int guiID)
         {
-            foreach (var element in EmployeeAddressList
+            foreach (var element in CustomerAddressList
                 .Where(element => element.UserProfileName == profileName))
             {
                 element.UserAddressStreet = addressStreet;
@@ -39,16 +39,16 @@ namespace BizWorks
                 element.UserLastUpdatedOn = lastUpdatedOn;
                 element.UserLastUpdatedBy = lastUpdatedBy;
                 element.UserNotes = notes;
-            } 
+            }
         }
 
         public static string GetStreet1(string passedUsername)
         {
             string x = "";
             var query =
-                from employee in EmployeeAddressList
-                where employee.UserProfileName == passedUsername
-                select employee.UserAddressStreet;
+                from customer in CustomerAddressList
+                where customer.UserProfileName == passedUsername
+                select customer.UserAddressStreet;
             foreach (var item in query)
             {
                 x = item;
@@ -59,9 +59,9 @@ namespace BizWorks
         {
             string x = "";
             var query =
-                from employee in EmployeeAddressList
-                where employee.UserProfileName == passedUsername
-                select employee.UserAddressCity;
+                from customer in CustomerAddressList
+                where customer.UserProfileName == passedUsername
+                select customer.UserAddressCity;
             foreach (var item in query)
             {
                 x = item;
@@ -72,48 +72,47 @@ namespace BizWorks
         {
             string x = "";
             var query =
-                from employee in EmployeeAddressList
-                where employee.UserProfileName == passedUsername
-                select employee.UserAddressState;
+                from customer in CustomerAddressList
+                where customer.UserProfileName == passedUsername
+                select customer.UserAddressState;
             foreach (var item in query)
             {
-                x = item;
-            }
+                x = item;            }
             return x;
         }
         public static int GetZipCode1(string passedUsername)
         {
             int x = 0;
             var query =
-                from employee in EmployeeAddressList
-                where employee.UserProfileName == passedUsername
-                select employee.UserAddressZipCode;
-            foreach(var item in query)
+                from customer in CustomerAddressList
+                where customer.UserProfileName == passedUsername
+                select customer.UserAddressZipCode;
+            foreach (var item in query)
             {
-                x = item;
-            }
+                x = item;            }
             return x;
         }
         public static string GetNotes1(string passedUsername)
         {
             string x = "";
             var query =
-                from employee in EmployeeAddressList
-                where employee.UserProfileName == passedUsername
-                select employee.UserNotes;
+                from customer in CustomerAddressList
+                where customer.UserProfileName == passedUsername
+                select customer.UserNotes;
             foreach (var item in query)
             {
                 x = item;
             }
             return x;
         }
+
         public static string GetCreatedBy(string username)
         {
             string x = "";
             var query =
-                from employee in EmployeeAddressList
-                where employee.UserProfileName == username
-                select employee.UserCreatedBy;
+                from customer in CustomerAddressList
+                where customer.UserProfileName == username
+                select customer.UserCreatedBy;
             foreach (var item in query) { x = item; }
             return x;
         }
@@ -121,9 +120,9 @@ namespace BizWorks
         {
             DateTime x = new DateTime();
             var query =
-                from employee in EmployeeAddressList
-                where employee.UserProfileName == username
-                select employee.UserCreatedOn;
+                from customer in CustomerAddressList
+                where customer.UserProfileName == username
+                select customer.UserCreatedOn;
             foreach (var item in query) { x = item; }
             return x;
         }
