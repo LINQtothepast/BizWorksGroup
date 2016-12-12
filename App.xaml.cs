@@ -64,6 +64,10 @@ namespace BizWorks
             AssetCollection.AddAsset("Leafblower", 500.0, 5.0, "Hardware", value, "admin", value, "admin", "for blowing leaves");
             AssetCollection.AddAsset("Snowblower", 400.0, 4.0, "Hardware", value, "admin", value, "admin", "for blowing snow");
 
+            UserPositionIDCollection.addUserPositionID(1, "Owner", 10000000.00);
+            UserPositionIDCollection.addUserPositionID(2, "Employee", 200000.00);
+            UserPositionIDCollection.addUserPositionID(3, "Intern", 0.0);
+
             wnd.Show();
         }
 
