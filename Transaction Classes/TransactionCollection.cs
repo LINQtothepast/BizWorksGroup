@@ -10,8 +10,8 @@ namespace BizWorks
     {
         private static List<Transaction> TransactionList = new List<Transaction>();
 
-        public static void AddTransaction(bool Credit, int custID, float transactAmount, string cgory,
-        DateTime transactDate, int AssID, DateTime createdOn, string createdBy,
+        public static void AddTransaction(bool Credit, string custID, double transactAmount, string cgory,
+        DateTime transactDate, string AssID, DateTime createdOn, string createdBy,
         DateTime lastUpdatedOn, string lastUpdatedBy, string notes)
         {
             TransactionList.Add(new Transaction(Credit, custID, transactAmount, cgory, transactDate,

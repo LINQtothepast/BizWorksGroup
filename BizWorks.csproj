@@ -139,6 +139,15 @@
     <Compile Include="Transaction Classes\TransactionCollection.cs" />
     <Compile Include="Employee Classes\UserEmployeeAddressCollection2.cs" />
     <Compile Include="Employee Classes\UserEmployeeEmergencyCollection2.cs" />
+    <Compile Include="TransactionAdd.xaml.cs">
+      <DependentUpon>TransactionAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionSelectAsset.xaml.cs">
+      <DependentUpon>TransactionSelectAsset.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionSelectCustomer.xaml.cs">
+      <DependentUpon>TransactionSelectCustomer.xaml</DependentUpon>
+    </Compile>
     <Page Include="Asset Add GUI\AssetAdd.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -220,6 +229,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Asset View GUI\SelectAssetToView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TransactionAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TransactionSelectAsset.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TransactionSelectCustomer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

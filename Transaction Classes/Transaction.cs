@@ -10,16 +10,16 @@ namespace BizWorks
     {
         private int transactionID;
         private bool isCredit;       // if false, then debit company account. If true then credit company account transactionAmount $
-        private int customerID;
-        private float transactionAmount; // USD
+        private string customerID;
+        private double transactionAmount; // USD
         private string category;
         private DateTime transactionDate; //is this needed if u have a created date?
-        private int assetID;        
+        private string assetID;        
      
         //use different names in the parameters than what is your private variables
         //constructor
-        public Transaction(bool Credit, int custID, float transactAmount, string cgory,
-        DateTime transactDate, int AssID, DateTime createdOn, string createdBy,
+        public Transaction(bool Credit, string custID, double transactAmount, string cgory,
+        DateTime transactDate, string AssID, DateTime createdOn, string createdBy,
         DateTime lastUpdatedOn, string lastUpdatedBy, string notes)
             : base(createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes)
         {
@@ -42,7 +42,7 @@ namespace BizWorks
             get { return isCredit; }
             set {isCredit = value; }
         }
-        public int CustomerID
+        public string CustomerID
         {
             get { return customerID; }
             set { customerID = value; }
@@ -59,13 +59,13 @@ namespace BizWorks
             set { transactionDate = value; }
         }
         
-        public int AssetID
+        public string AssetID
         {
             get {return assetID;}
             set {assetID = value;}
         }
         
-        public float TransactionAmount
+        public double TransactionAmount
         {
             get { return transactionAmount; }
             set { transactionAmount = value; }

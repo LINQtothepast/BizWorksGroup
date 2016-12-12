@@ -78,5 +78,12 @@ namespace BizWorks
             this.Close();
             main.Show();
         }
+        private void AddTransactionClick(object sender, RoutedEventArgs e)
+        {
+            TransactionSelectCustomer main = new TransactionSelectCustomer(sessionUserMainMenu);
+            App.Current.MainWindow = main;
+            this.Close();
+            main.Show();
+        }
     }
 }
