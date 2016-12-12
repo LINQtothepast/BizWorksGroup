@@ -1,0 +1,22 @@
+<Window x:Class="BizWorks.AssetAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BizWorks"
+        mc:Ignorable="d"
+        Title="Asset Add" Height="550" Width="700">
+  <Grid Margin="0,0,2,-20">
+        <Label x:Name="label" Content="Asset Name" HorizontalAlignment="Left" Height="29" Margin="20,123,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label x:Name="label_Copy" Content="Asset Catagory" HorizontalAlignment="Left" Height="29" Margin="20,225,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label x:Name="label_Copy1" Content="Asset Quantity" HorizontalAlignment="Left" Height="29" Margin="20,191,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="AssetQuantity" HorizontalAlignment="Left" Height="29" Margin="136,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
+        <TextBox x:Name="AssetCategory" HorizontalAlignment="Left" Height="29" Margin="136,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
+        <Button x:Name="Next" Content="Next" HorizontalAlignment="Left" Height="37" Margin="481,426,0,0" VerticalAlignment="Top" Width="139" Click="Next_Click"/>
+        <Label x:Name="label2" Content="Notes : " HorizontalAlignment="Left" Height="25" Margin="19,282,0,0" VerticalAlignment="Top" Width="95"/>
+        <TextBox x:Name="NotesTextBox" GotFocus="TextBox_GotFocus" HorizontalAlignment="Left" Height="156" Margin="19,307,0,0" TextWrapping="Wrap" Text="Type Notes Here Please" VerticalAlignment="Top" Width="363"/>
+        <Label x:Name="label_Copy3" Content="Asset Value" HorizontalAlignment="Left" Height="29" Margin="20,157,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="AssetValue" HorizontalAlignment="Left" Height="29" Margin="136,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
+        <TextBox x:Name="AssetName" HorizontalAlignment="Left" Height="29" Margin="136,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
+    </Grid>
+</Window>

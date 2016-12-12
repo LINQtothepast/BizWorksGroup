@@ -19,8 +19,9 @@ namespace BizWorks
         //use different names in the parameters than what is your private variables
         //constructor
         public Transaction(bool Credit, int custID, float transactAmount, string cgory,
-        DateTime transactDate, int AssID, DateTime createdOn, string createdBy, string notes)
-            : base(createdOn, createdBy, notes)
+        DateTime transactDate, int AssID, DateTime createdOn, string createdBy,
+        DateTime lastUpdatedOn, string lastUpdatedBy, string notes)
+            : base(createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes)
         {
             IsCredit = Credit;
             CustomerID = custID;
@@ -28,8 +29,6 @@ namespace BizWorks
             Category = cgory;
             TransactionDate = transactDate;
             AssetID = AssID;      // assetID == 1 is for cash, everything else is a material item eg. inventory
-	    TransactionCollection.AddTransaction((IsCredit, CustomerID, TransactionAmount, Category,
-            TransactionDate, AssetID, createdOn, createdBy, notes);
             transactionID = TransactionCollection.GetTransactionID();
         }
 

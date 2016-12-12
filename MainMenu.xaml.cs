@@ -64,5 +64,19 @@ namespace BizWorks
             this.Close();
             main.Show();
         }
+        private void AddAssetClick(object sender, RoutedEventArgs e)
+        {
+            AssetAdd main = new AssetAdd(sessionUserMainMenu);
+            App.Current.MainWindow = main;
+            this.Close();
+            main.Show();
+        }
+        private void EditAssetClick(object sender, RoutedEventArgs e)
+        {
+            SelectAssetToView main = new SelectAssetToView(sessionUserMainMenu);
+            App.Current.MainWindow = main;
+            this.Close();
+            main.Show();
+        }
     }
 }

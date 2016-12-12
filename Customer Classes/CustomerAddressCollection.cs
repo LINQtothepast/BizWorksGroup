@@ -25,7 +25,7 @@ namespace BizWorks
             string addressCity, string addressState,
             int addressZipCode, DateTime createdOn,
             string createdBy, DateTime lastUpdatedOn, string lastUpdatedBy,
-            string notes, int guiID)
+            string notes)
         {
             foreach (var element in CustomerAddressList
                 .Where(element => element.UserProfileName == profileName))

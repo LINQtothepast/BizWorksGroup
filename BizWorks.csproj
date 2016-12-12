@@ -57,6 +57,12 @@
     </ApplicationDefinition>
     <Compile Include="Asset Classes\Asset.cs" />
     <Compile Include="Asset Classes\AssetCollection.cs" />
+    <Compile Include="Asset Add GUI\AssetAdd.xaml.cs">
+      <DependentUpon>AssetAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Asset View GUI\AssetShow.xaml.cs">
+      <DependentUpon>AssetShow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Customer Classes\Customer.cs" />
     <Compile Include="Customer Classes\CustomerAddressCollection.cs" />
     <Compile Include="Customer GUI\Customer Add GUI\CustomerAdd1.xaml.cs">
@@ -126,10 +132,21 @@
     <Compile Include="Customer GUI\Customer View GUI\SelectCustomerToView.xaml.cs">
       <DependentUpon>SelectCustomerToView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Asset View GUI\SelectAssetToView.xaml.cs">
+      <DependentUpon>SelectAssetToView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Transaction Classes\Transaction.cs" />
     <Compile Include="Transaction Classes\TransactionCollection.cs" />
     <Compile Include="Employee Classes\UserEmployeeAddressCollection2.cs" />
     <Compile Include="Employee Classes\UserEmployeeEmergencyCollection2.cs" />
+    <Page Include="Asset Add GUI\AssetAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Asset View GUI\AssetShow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Customer GUI\Customer Add GUI\CustomerAdd1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -199,6 +216,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Customer GUI\Customer View GUI\SelectCustomerToView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Asset View GUI\SelectAssetToView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

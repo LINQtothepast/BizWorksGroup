@@ -48,7 +48,7 @@ namespace BizWorks
             state1 = UserInputState1.Text;
             zip1 = Convert.ToInt32(UserInputZip1.Text);
             notes1 = NotesTextBox1.Text;
-            CustomerAddressCollection.addCustomerAddress(passedUsername,
+            CustomerAddressCollection.ModifyCustomerAddress1(passedUsername,
                     street1, city1, state1, zip1, 
                     CustomerAddressCollection.GetCreatedByDate(passedUsername),
                     CustomerAddressCollection.GetCreatedBy(passedUsername), dateRightNow,

@@ -19,6 +19,25 @@ namespace BizWorks
                 createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
 
+        public static void ModifyCustomer(string name, int profileTypeID, string user, string pass,
+            string workNum, string faxNum, string email, DateTime createdOn, string createdBy,
+            DateTime lastUpdatedOn, string lastUpdatedBy, string notes)
+        {
+            foreach (var element in CustomerList
+                .Where(element => element.CompanyName == name))
+            {
+                element.Username = user;
+                element.WorkNumber = workNum;
+                element.FaxNumber = faxNum;
+                element.Email = email;
+                element.UserCreatedOn = createdOn;
+                element.UserCreatedBy = createdBy;
+                element.UserLastUpdatedOn = lastUpdatedOn;
+                element.UserLastUpdatedBy = lastUpdatedBy;
+                element.UserNotes = notes;
+            }
+        }
+
         public static List<Customer> ReturnAList()
         {
             List<Customer> theList = new List<Customer>();

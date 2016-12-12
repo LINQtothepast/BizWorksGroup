@@ -10,21 +10,21 @@ namespace BizWorks
     {
         private int assetID;
         private string assetName;
-        private float assetValue;
-        private float assetQuantity;
+        private double assetValue;
+        private double assetQuantity;
         private string category;
-        private float totalValue;
+        private double totalValue;
    
         //constructor
-        public Asset(string assetName, float assetValue, float assetQuantity, string category,
-            DateTime createdOn, string createdBy, string notes)
-            : base(createdOn, createdBy, notes)
-        { 
+        public Asset(string assetName, double assetValue, double assetQuantity, string category,
+            DateTime createdOn, string createdBy, DateTime updatedOn, string updatedBy, string notes)
+            : base(createdOn, createdBy, updatedOn, updatedBy, notes)
+        {
+            AssetID = AssetCollection.SetAssetID();
             AssetName = assetName;
             AssetValue = assetValue;
             AssetQuantity = assetQuantity;
             Category = category;
-            AssetID = AssetCollection.GetAssetID(assetName);
             TotalValue = assetValue * assetQuantity;
         }
 
@@ -47,29 +47,22 @@ namespace BizWorks
             set { category = value; }
         }
      
-        public float AssetValue
+        public double AssetValue
         {
             get { return assetValue; }
             set { assetValue = value; }
         }
         
-        public float AssetQuantity
+        public double AssetQuantity
         {
             get {return assetQuantity; }
             set { assetQuantity = value; }
         }
         
-        public float TotalValue
+        public double TotalValue
         {
             get { return totalValue; }
             set { totalValue = value; }
-        }
-
-        //methods
-        public static void update(int assetID, bool isCredit,
-            float transactionAmount)
-        {
-            // update asset amount
         }
     }
 }

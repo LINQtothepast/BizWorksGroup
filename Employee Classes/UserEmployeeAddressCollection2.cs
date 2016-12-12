@@ -40,6 +40,16 @@ namespace BizWorks
                 element.UserLastUpdatedBy = lastUpdatedBy;
                 element.UserNotes = notes;
             }
+            var query =
+                from employee in EmployeeAddressList
+                where employee.UserProfileName == profileName
+                select employee;
+            if (query.Count() == 0)
+            {
+                addUserAddress2(profileName, addressStreet,
+                addressCity, addressState, addressZipCode, lastUpdatedOn,
+                lastUpdatedBy, lastUpdatedOn, lastUpdatedBy, notes);
+            }
         }
 
         public static void DeleteUserAddress2(string passedUsername)

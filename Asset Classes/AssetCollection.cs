@@ -10,7 +10,7 @@ namespace BizWorks
     {
         private static List<Asset> AssetList = new List<Asset>();
 
-        public static void AddAsset(string assetName, float assetValue, float assetQuantity,
+        public static void AddAsset(string assetName, double assetValue, double assetQuantity,
             string category, DateTime createdOn, string createdBy,
             DateTime lastUpdatedOn, string lastUpdatedBy, string notes)
         {
@@ -18,29 +18,129 @@ namespace BizWorks
                 category, createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
 
-        public static int GetAssetID()
+        public static void ModifyAsset(int ID, string assetName, double assetValue, double assetQuantity,
+            string category, DateTime createdOn, string createdBy,
+            DateTime lastUpdatedOn, string lastUpdatedBy, string notes)
         {
-            int x = AssetList.Count();
+            foreach (var element in AssetList
+                .Where(element => element.AssetID == ID))
+            {
+                element.AssetName = assetName;
+                element.AssetValue = assetValue;
+                element.AssetQuantity = assetQuantity;
+                element.Category = category;
+                element.UserCreatedOn = createdOn;
+                element.UserCreatedBy = createdBy;
+                element.UserLastUpdatedOn = lastUpdatedOn;
+                element.UserLastUpdatedBy = lastUpdatedBy;
+                element.UserNotes = notes;
+            }
+        }
+
+        public static List<Asset> ReturnAList()
+        {
+            List<Asset> theList = new List<Asset>();
+            theList = AssetList;
+
+            return theList;
+        }
+
+        public static int SetAssetID()
+        {
+            int x = 0;
+            x = AssetList.Count();
             return x;
         }
         
-        public static float GetTotalValue(Asset ass)
+        public static double GetTotalValue(Asset ass)
         {
-            return ass.assetValue * ass.assetQuantity;
+            return ass.AssetValue * ass.AssetQuantity;
         }
             
         
-        public static String printDetails(String name){
-            for (int i = 0; i <= AssetList.Count(); i++)
+        public static void printDetails(String name){
+
+            foreach (var element in AssetList)
             {
-                if (AssetList[i].assetName == name){
-                    Console.WriteLine("Name : ", AssetList[i].name);
-                    Console.WriteLine("Value : ", AssetList[i].assetValue);
-                    Console.WriteLine("Quantity : ", AssetList[i].assetQuantity);
-                    Console.WriteLine("Total Value : ", GetTotalValue(assetList[i]);
-                    }
+                if (element.AssetName == name)
+                {
+                    Console.WriteLine("Name : ", element.AssetName);
+                    Console.WriteLine("Value : ", element.AssetValue);
+                    Console.WriteLine("Quantity : ", element.AssetQuantity);
+                    Console.WriteLine("Total Value : ", GetTotalValue(element));
+                }
             }
          }
-                                      
+
+        public static double GetAssetValue(string assetName)
+        {
+            double x = 0;
+            var query =
+                from element in AssetList
+                where element.AssetName == assetName
+                select element.AssetValue;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
+        public static double GetAssetQuantity(string assetName)
+        {
+            double x = 0;
+            var query =
+                from element in AssetList
+                where element.AssetName == assetName
+                select element.AssetQuantity;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
+        public static string GetAssetCategory(string assetName)
+        {
+            string x = " ";
+            var query =
+                from element in AssetList
+                where element.AssetName == assetName
+                select element.Category;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
+        public static int GetAssetID(string assetName)
+        {
+            int x = 0;
+            var query =
+                from element in AssetList
+                where element.AssetName == assetName
+                select element.AssetID;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
+        public static string GetCreatedBy(string assetName)
+        {
+            string x = " ";
+            var query =
+                from element in AssetList
+                where element.AssetName == assetName
+                select element.Category;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
+        public static DateTime GetCreatedOn(string assetName)
+        {
+            DateTime x = new DateTime();
+            var query =
+                from element in AssetList
+                where element.AssetName == assetName
+                select element.UserCreatedOn;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
+        public static string GetAssetNotes(string assetName)
+        {
+            string x = " ";
+            var query =
+                from element in AssetList
+                where element.AssetName == assetName
+                select element.UserNotes;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
     }
 }

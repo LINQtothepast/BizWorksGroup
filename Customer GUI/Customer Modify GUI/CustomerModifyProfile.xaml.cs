@@ -43,12 +43,12 @@ namespace BizWorks
         private void Next_Click(object sender, RoutedEventArgs e)
         {
             int selectedProfileType = 0;
-            string workNumber, fax, name;
+            string workNumber, fax;
             string userEmail, storedUsername, storedPassword;
             string notes;
             workNumber = WorkPhone.Text;
             fax = FaxNumber.Text;
-            name = ComName.Text;
+            //name = ComName.Text;
             userEmail = Email.Text;
             storedUsername = Username.Text;
             storedPassword = CustomerCollection.GetPassword(passedUsername);
@@ -62,7 +62,7 @@ namespace BizWorks
 
             //adds on to the back
             //so access with UserCollection.last();
-            CustomerCollection.AddCustomer(name, selectedProfileType,
+            CustomerCollection.ModifyCustomer(passedUsername, selectedProfileType,
                 storedUsername, storedPassword, workNumber,
                 fax, userEmail,
                 CustomerCollection.GetCreatedByDate(passedUsername), 

@@ -40,6 +40,17 @@ namespace BizWorks
                 element.UserLastUpdatedBy = lastUpdatedBy;
                 element.UserNotes = notes;
             }
+
+            var query =
+                from employee in EmployeeEmergencyContactList
+                where employee.Username == passedUsername
+                select employee;
+            if (query.Count() == 0)
+            {
+                addUserEmergencyContact2(passedUsername, eFirst,
+                eLast, ePhoneNumber, eRelation, lastUpdatedOn,
+                lastUpdatedBy, lastUpdatedOn, lastUpdatedBy, notes);
+            }
         }
 
         public static void RemoveEContact2(string username)

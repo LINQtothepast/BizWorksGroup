@@ -15,5 +15,8 @@
         <Label x:Name="label2" Content="Customer" HorizontalAlignment="Left" Margin="233,51,0,0" VerticalAlignment="Top" Width="96"/>
         <Button x:Name="CustomerAdd" Content="Customer Add" HorizontalAlignment="Left" Margin="209,85,0,0" VerticalAlignment="Top" Width="106" Click="AddCustomerClick" Height="22"/>
         <Button x:Name="CustomerUpdate" Content="Customer Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="209,112,0,0" Click="EditCustomerClick" />
+        <Button x:Name="AssetAdd" Content="Asset Add" HorizontalAlignment="Left" Margin="370,85,0,0" VerticalAlignment="Top" Width="106" Click="AddAssetClick" Height="22"/>
+        <Button x:Name="AssetUpdate" Content="Asset Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="370,112,0,0" Click="EditAssetClick" />
+        <Label x:Name="label2_Copy" Content="Asset" HorizontalAlignment="Left" Margin="402,54,0,0" VerticalAlignment="Top" Width="96"/>
     </Grid>
 </Window>

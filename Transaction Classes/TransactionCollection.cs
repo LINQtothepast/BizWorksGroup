@@ -10,14 +10,15 @@ namespace BizWorks
     {
         private static List<Transaction> TransactionList = new List<Transaction>();
 
-        private static void AddTransaction(bool Credit, int custID, float transactAmount, string cgory,
-        DateTime transactDate, int AssID, DateTime createdOn, string createdBy, string notes)
+        public static void AddTransaction(bool Credit, int custID, float transactAmount, string cgory,
+        DateTime transactDate, int AssID, DateTime createdOn, string createdBy,
+        DateTime lastUpdatedOn, string lastUpdatedBy, string notes)
         {
             TransactionList.Add(new Transaction(Credit, custID, transactAmount, cgory, transactDate,
-                AssID, createdOn, createdBy, notes));
+                AssID, createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
         
-         
+        /* 
         public static String listTransactions(DateTime transDate){
             for (int i = 0; i <= TransactionList.Count(); i++)
             {
@@ -28,8 +29,9 @@ namespace BizWorks
                    }
             }
         }
+        */
 
-        private static int GetTransactionID()
+        public static int GetTransactionID()
         {
             //put what you need here
             int x = TransactionList.Count();
