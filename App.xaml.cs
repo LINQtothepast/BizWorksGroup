@@ -64,9 +64,9 @@ namespace BizWorks
             AssetCollection.AddAsset("Leafblowers", 500.0, 5.0, "Hardware", value, "admin", value, "admin", "for blowing leaves");
             AssetCollection.AddAsset("Snowblowers", 400.0, 4.0, "Hardware", value, "admin", value, "admin", "for blowing snow");
 
-            TransactionCollection.AddTransaction(true, "Walmart", 50069.00, "Stuff", value, "Lawnmowers", value, "admin", value, "admin", "no notes");
-            TransactionCollection.AddTransaction(true, "Dominos Pizza", 6666.00, "Hardware", value, "Snowblowers", value, "admin", value, "admin", "no notes");
-            TransactionCollection.AddTransaction(true, "Walmart", 5555.00, "Stuff", value, "Leafblowers", value, "admin", value, "admin", "no notes");
+            TransactionCollection.AddTransaction(true, "walmart", 50069.00, "Stuff", value, "Lawnmowers", value, "admin", value, "admin", "no notes");
+            TransactionCollection.AddTransaction(true, "dominos", 6666.00, "Hardware", value, "Snowblowers", value, "admin", value, "admin", "no notes");
+            TransactionCollection.AddTransaction(true, "dicks", 5555.00, "Stuff", value, "Leafblowers", value, "admin", value, "admin", "no notes");
 
             wnd.Show();
         }
