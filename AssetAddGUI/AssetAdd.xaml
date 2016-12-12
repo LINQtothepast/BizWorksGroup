@@ -8,14 +8,6 @@
         mc:Ignorable="d"
         Title="TransactionAdd" Height="550" Width="700">
   
-  
-   private int assetID;
-        private string assetName;
-        private float assetValue;
-        private float assetQuantity;
-        private string category;
-        private float totalValue;
-  
     <Grid Margin="0,0,2,-20">
         <Label x:Name="label_Copy" Content="Asset Name" HorizontalAlignment="Left" Height="29" Margin="323,125,0,0" VerticalAlignment="Top" Width="94"/>
         <Label x:Name="label_Copy1" Content="Asset Value" HorizontalAlignment="Left" Height="29" Margin="323,91,0,0" VerticalAlignment="Top" Width="94"/>
