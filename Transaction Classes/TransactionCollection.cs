@@ -18,6 +18,11 @@ namespace BizWorks
                 AssID, createdOn, createdBy, lastUpdatedOn, lastUpdatedBy, notes));
         }
         
+        public static List<Transaction> ReturnAList()
+        {
+            return TransactionList;
+        }
+
         /* 
         public static String listTransactions(DateTime transDate){
             for (int i = 0; i <= TransactionList.Count(); i++)

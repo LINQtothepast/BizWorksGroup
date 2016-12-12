@@ -135,6 +135,15 @@
     <Compile Include="Asset View GUI\SelectAssetToView.xaml.cs">
       <DependentUpon>SelectAssetToView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="profileTypeAdd.xaml.cs">
+      <DependentUpon>profileTypeAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileTypeModify.xaml.cs">
+      <DependentUpon>ProfileTypeModify.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelectUserToView2.xaml.cs">
+      <DependentUpon>SelectUserToView2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Transaction Classes\Transaction.cs" />
     <Compile Include="Transaction Classes\TransactionCollection.cs" />
     <Compile Include="Employee Classes\UserEmployeeAddressCollection2.cs" />
@@ -147,6 +156,14 @@
     </Compile>
     <Compile Include="TransactionSelectCustomer.xaml.cs">
       <DependentUpon>TransactionSelectCustomer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionView.xaml.cs">
+      <DependentUpon>TransactionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserPositionID.cs" />
+    <Compile Include="UserPositionIDCollection.cs" />
+    <Compile Include="UserPositionSelect.xaml.cs">
+      <DependentUpon>UserPositionSelect.xaml</DependentUpon>
     </Compile>
     <Page Include="Asset Add GUI\AssetAdd.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -232,6 +249,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="profileTypeAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProfileTypeModify.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelectUserToView2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TransactionAdd.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -241,6 +270,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TransactionSelectCustomer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TransactionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserPositionSelect.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -272,7 +309,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="BizworksLogo.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

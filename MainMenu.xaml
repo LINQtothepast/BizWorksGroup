@@ -19,6 +19,11 @@
         <Button x:Name="AssetUpdate" Content="Asset Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="370,112,0,0" Click="EditAssetClick" />
         <Label x:Name="label2_Copy" Content="Asset" HorizontalAlignment="Left" Margin="402,54,0,0" VerticalAlignment="Top" Width="96"/>
         <Label x:Name="label2_Copy1" Content="Transaction" HorizontalAlignment="Left" Margin="548,54,0,0" VerticalAlignment="Top" Width="96"/>
-        <Button x:Name="TransactionAdd" Content="Asset Add" HorizontalAlignment="Left" Margin="531,85,0,0" VerticalAlignment="Top" Width="106" Click="AddTransactionClick" Height="22"/>
+        <Button x:Name="TransactionAdd" Content="Transaction Add" HorizontalAlignment="Left" Margin="531,85,0,0" VerticalAlignment="Top" Width="106" Click="AddTransactionClick" Height="22"/>
+        <Label x:Name="label1_Copy" Content="Position Assignment" HorizontalAlignment="Left" Height="29" Margin="29,196,0,0" VerticalAlignment="Top" Width="129"/>
+        <Button x:Name="PositionAdd" Content="Position Add" HorizontalAlignment="Left" Margin="29,230,0,0" VerticalAlignment="Top" Width="106" Click="PositionAddClick" Height="22"/>
+        <Button x:Name="PositionUpdate" Content="Position Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="29,257,0,0" Click="PositionUpdateClick" />
+        <Image Height="344" Margin="163,159,44.6,37.8" Stretch="UniformToFill" Source="BizWorksLogo.jpg" VerticalAlignment="Stretch"/>
+        <Button x:Name="TransactionAdd_Copy" Content="Transaction View" HorizontalAlignment="Left" Margin="531,110,0,0" VerticalAlignment="Top" Width="106" Click="ViewTransactionClick" Height="22"/>
     </Grid>
 </Window>

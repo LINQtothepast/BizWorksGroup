@@ -14,5 +14,31 @@ namespace BizWorks
         {
             UserPositionIDList.Add(new UserPositionID(userId, userPosition, userPay));
         }
-	}
+
+        public static List<UserPositionID> ReturnAList()
+        {
+            return UserPositionIDList;
+        }
+
+        public static double GetPay(string passedPositionName)
+        {
+            double x = 0;
+            var query =
+                from element in UserPositionIDList
+                where element.UserPosition == passedPositionName
+                select element.UserPay;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
+        public static int GetID(string passedPositionName)
+        {
+            int x = 0;
+            var query =
+                from element in UserPositionIDList
+                where element.UserPosition == passedPositionName
+                select element.UserId;
+            foreach (var item in query) { x = item; }
+            return x;
+        }
+    }
 }

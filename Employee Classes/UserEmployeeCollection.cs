@@ -63,6 +63,17 @@ namespace BizWorks
             }
         }
 
+        public static void ModifyPosition(string storedUsername, int ID)
+        {
+            foreach (var element in EmployeeList)
+            {
+                if (element.Username == storedUsername)
+                {
+                    element.UserPositionID = ID;
+                }
+            }
+        }
+
         public static void DeactivateUser(string storedUsername)
         {
             foreach (var element in EmployeeList)

@@ -9,12 +9,12 @@
     <Grid Margin="0,0,2,-20">
         <Label x:Name="label_Copy" Content="User Pay" HorizontalAlignment="Left" Height="29" Margin="19,148,0,0" VerticalAlignment="Top" Width="94"/>
         <Label x:Name="label_Copy1" Content="User Position" HorizontalAlignment="Left" Height="29" Margin="19,114,0,0" VerticalAlignment="Top" Width="94"/>
-        <TextBox x:Name="Work Phone" HorizontalAlignment="Left" Height="29" Margin="136,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
-        <TextBox x:Name="FaxNumber" HorizontalAlignment="Left" Height="29" Margin="136,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
+        <TextBox x:Name="PositionNameTextBox" HorizontalAlignment="Left" Height="29" Margin="136,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
+        <TextBox x:Name="PositionPay" HorizontalAlignment="Left" Height="29" Margin="136,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
         <Button x:Name="Next" Content="Next" HorizontalAlignment="Left" Height="37" Margin="481,426,0,0" VerticalAlignment="Top" Width="139" Click="Next_Click"/>
         <Label x:Name="label2" Content="Notes : " HorizontalAlignment="Left" Height="25" Margin="19,282,0,0" VerticalAlignment="Top" Width="95"/>
         <TextBox x:Name="NotesTextBox" GotFocus="TextBox_GotFocus" HorizontalAlignment="Left" Height="156" Margin="19,307,0,0" TextWrapping="Wrap" Text="Type Notes Here Please" VerticalAlignment="Top" Width="363"/>
-        <Label x:Name="label_Copy3" Content="User ID Number" HorizontalAlignment="Left" Height="29" Margin="19,80,0,0" VerticalAlignment="Top" Width="94"/>
-        <TextBox x:Name="ComName" HorizontalAlignment="Left" Height="29" Margin="136,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
+        <Label x:Name="label_Copy3" Content="User Position ID" HorizontalAlignment="Left" Height="29" Margin="19,80,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="PositionID" HorizontalAlignment="Left" Height="29" Margin="136,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
     </Grid>
 </Window>

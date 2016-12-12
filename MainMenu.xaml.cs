@@ -85,5 +85,26 @@ namespace BizWorks
             this.Close();
             main.Show();
         }
+        private void ViewTransactionClick(object sender, RoutedEventArgs e)
+        {
+            TransactionView main = new TransactionView(sessionUserMainMenu);
+            App.Current.MainWindow = main;
+            this.Close();
+            main.Show();
+        }
+        private void PositionAddClick(object sender, RoutedEventArgs e)
+        {
+            profileTypeAdd main = new profileTypeAdd(sessionUserMainMenu);
+            App.Current.MainWindow = main;
+            this.Close();
+            main.Show();
+        }
+        private void PositionUpdateClick(object sender, RoutedEventArgs e)
+        {
+            SelectUserToView2 main = new SelectUserToView2(sessionUserMainMenu);
+            App.Current.MainWindow = main;
+            this.Close();
+            main.Show();
+        }
     }
 }

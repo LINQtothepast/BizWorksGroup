@@ -8,18 +8,19 @@ namespace BizWorks
 {
 	public class UserPositionID 
 	{
-		private int id;
-		private string position;
-		private double pay;
+		private int userId;
+		private string userPosition;
+		private double userPay;
 		
 		//constructor
-		public UserPositionID(int userId, string userPosition, double userPay)
+		public UserPositionID(int Id, string Position, double Pay)
 		{
-			UserId = userId;
-			UserPosition = userPosition;
-			UserPay = userPay;
+			UserId = Id;
+			UserPosition = Position;
+			UserPay = Pay;
 		}
 		
+        //properties
 		public int UserId
 		{
 			get { return userId; }
