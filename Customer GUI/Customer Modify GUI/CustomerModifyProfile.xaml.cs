@@ -30,7 +30,6 @@ namespace BizWorks
 
             //set customer fields
             ComName.Text = CustomerCollection.GetCompanyName(passedUsername);
-            Username.Text = passedUsername;
             int holderVariable = CustomerCollection.GetProfileType(passedUsername);
             if (holderVariable == 3)
             { ProfileType.Text = "Customer"; }
@@ -44,13 +43,13 @@ namespace BizWorks
         {
             int selectedProfileType = 0;
             string workNumber, fax;
-            string userEmail, storedUsername, storedPassword;
-            string notes;
+            string userEmail, storedPassword;
+            string notes, comName;
+            comName = ComName.Text;
             workNumber = WorkPhone.Text;
             fax = FaxNumber.Text;
             //name = ComName.Text;
             userEmail = Email.Text;
-            storedUsername = Username.Text;
             storedPassword = CustomerCollection.GetPassword(passedUsername);
             notes = NotesTextBox.Text;
             if (ProfileType.Text == "Customer")
@@ -62,14 +61,14 @@ namespace BizWorks
 
             //adds on to the back
             //so access with UserCollection.last();
-            CustomerCollection.ModifyCustomer(passedUsername, selectedProfileType,
-                storedUsername, storedPassword, workNumber,
+            CustomerCollection.ModifyCustomer(comName, selectedProfileType,
+                passedUsername, storedPassword, workNumber,
                 fax, userEmail,
                 CustomerCollection.GetCreatedByDate(passedUsername), 
                 CustomerCollection.GetCreatedBy(passedUsername), dateRightNow,
                 sessionUserCustomerModifyProfile, notes);
 
-            CustomerShow main = new CustomerShow(sessionUserCustomerModifyProfile, storedUsername);
+            CustomerShow main = new CustomerShow(sessionUserCustomerModifyProfile, passedUsername);
             App.Current.MainWindow = main;
             this.Close();
             main.Show();

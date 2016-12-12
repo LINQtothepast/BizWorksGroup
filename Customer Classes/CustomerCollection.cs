@@ -23,18 +23,20 @@ namespace BizWorks
             string workNum, string faxNum, string email, DateTime createdOn, string createdBy,
             DateTime lastUpdatedOn, string lastUpdatedBy, string notes)
         {
-            foreach (var element in CustomerList
-                .Where(element => element.CompanyName == name))
+            foreach (var element in CustomerList)
             {
-                element.Username = user;
-                element.WorkNumber = workNum;
-                element.FaxNumber = faxNum;
-                element.Email = email;
-                element.UserCreatedOn = createdOn;
-                element.UserCreatedBy = createdBy;
-                element.UserLastUpdatedOn = lastUpdatedOn;
-                element.UserLastUpdatedBy = lastUpdatedBy;
-                element.UserNotes = notes;
+                if (element.Username == user)
+                {
+                    element.CompanyName = name;
+                    element.WorkNumber = workNum;
+                    element.FaxNumber = faxNum;
+                    element.Email = email;
+                    element.UserCreatedOn = createdOn;
+                    element.UserCreatedBy = createdBy;
+                    element.UserLastUpdatedOn = lastUpdatedOn;
+                    element.UserLastUpdatedBy = lastUpdatedBy;
+                    element.UserNotes = notes;
+                }
             }
         }
 

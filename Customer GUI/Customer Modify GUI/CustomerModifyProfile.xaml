@@ -17,8 +17,6 @@
         <TextBox x:Name="WorkPhone" HorizontalAlignment="Left" Height="29" Margin="136,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
         <TextBox x:Name="FaxNumber" HorizontalAlignment="Left" Height="29" Margin="136,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
         <TextBox x:Name="Email" HorizontalAlignment="Left" Height="29" Margin="136,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
-        <Label x:Name="label_Copy5" Content="Username" HorizontalAlignment="Left" Height="29" Margin="19,216,0,0" VerticalAlignment="Top" Width="94"/>
-        <TextBox x:Name="Username" HorizontalAlignment="Left" Height="29" Margin="136,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" />
         <Button x:Name="Next" Content="Next" HorizontalAlignment="Left" Height="37" Margin="481,426,0,0" VerticalAlignment="Top" Width="139" Click="Next_Click"/>
         <Label x:Name="label2" Content="Notes : " HorizontalAlignment="Left" Height="25" Margin="19,282,0,0" VerticalAlignment="Top" Width="95"/>
         <TextBox x:Name="NotesTextBox" GotFocus="TextBox_GotFocus" HorizontalAlignment="Left" Height="156" Margin="19,307,0,0" TextWrapping="Wrap" Text="Type Notes Here Please" VerticalAlignment="Top" Width="363"/>
