@@ -59,6 +59,13 @@ namespace BizWorks
                 "dicks@sportinggoods.com", value, "admin", value, "admin", "no notes");
             CustomerCollection.AddCustomer("Dominos Pizza", 3, "dominos", "pizza", "574-666-6666", "574-323-0909",
                 "dominos@pizza.com", value, "admin", value, "admin", "no notes");
+                
+            CustomerAddressCollection.addCustomerAddress("walmart", "123 Streert Name", "Mishawaka", "Indiana", 46544,
+                value, "admin", value, "admin", "no notes");
+            CustomerAddressCollection.addCustomerAddress("dicks", "234 Streert Name", "Mishawaka", "Indiana", 46544,
+                value, "admin", value, "admin", "no notes");
+            CustomerAddressCollection.addCustomerAddress("dominos", "345 Streert Name", "Mishawaka", "Indiana", 46544,
+                value, "admin", value, "admin", "no notes");
 
             AssetCollection.AddAsset("Lawnmowers", 2000.0, 10.0, "Hardware", value, "admin", value, "admin", "for cutting grass");
             AssetCollection.AddAsset("Leafblower", 500.0, 5.0, "Hardware", value, "admin", value, "admin", "for blowing leaves");
